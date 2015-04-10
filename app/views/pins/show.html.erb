@@ -8,7 +8,7 @@
 							<%= link_to pins_path do %>
 								<span class="glyphicon glyphicon-arrow-left"><span>
 							<% end %></p>
-							<% if @pin.user == current_user %>
+							<% if current_user && @pin.user == current_user %>
 								<%= link_to edit_pin_path(@pin) do %>
 									<span class="glyphicon glyphicon-edit"></span>
 								<% end %></p>
