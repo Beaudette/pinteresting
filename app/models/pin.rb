@@ -6,5 +6,6 @@ class Pin < ActiveRecord::Base
 
 	validates :image, presence: true
 	validates :description, presence: true
+	validates :description, length: { maximum: 256 }
 
 end
